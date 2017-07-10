@@ -75,7 +75,6 @@ outpost::rtos::Thread::start()
                 (mStackSize / sizeof(portSTACK_TYPE)) + 1,
                 this,
                 static_cast<unsigned portBASE_TYPE>(toFreeRtosPriority(mPriority, configMAX_PRIORITIES)),
-                //3,
                 &mHandle);
 
         if (status != pdPASS)

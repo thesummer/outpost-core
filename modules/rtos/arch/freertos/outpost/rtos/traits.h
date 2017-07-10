@@ -59,6 +59,13 @@ namespace outpost
             typedef int32_t  SignedType;
             typedef uint32_t UnsignedType;
         };
+
+        template<>
+        struct Traits<long unsigned int>
+        {
+            typedef int32_t  SignedType;
+            typedef uint32_t UnsignedType;
+        };
         template<>
         struct Traits<int64_t>
         {
